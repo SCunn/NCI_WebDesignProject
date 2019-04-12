@@ -1,28 +1,145 @@
 <html>
-<head>
-	<title>
-	Week 4 Lab -navbar
-	</title>
-	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
-</head>
-<body>
-	
-	<div class = "topnav">
-	
-		<a  href="index.html">HOME</a>
-		<a  href="about.html">About</a>
-		<a  href="news.html">News</a>
-		<a  class = "active" href="contact.html">Contact</a>
-	
-	</div>
-	
-	<div>
-	
-		<h1>This is my Contact page</h1>
-		<p>Welcome to my Contact page</p>
-	
-	</div>
-	
-</body>
+	<head>
+		<title>
+		Contact|PIZZA IMPERO
+		</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	</head>
+	<body>
+			<header>
+					<div class="container">
+						<img src="images/PizzaImpereLogo.png" alt="logo" style="height: 65; float: left; padding-right: 8px;">
+					  <div id="branding">
+						<h1><span class="highlight">PIZZA</span> IMPERO</h1>
+					  </div>
+					  <nav>
+						<ul>
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="menus.html">Menus</a></li>
+						  <li><a href="feedback.html">Feedback</a></li>
+						  <li class="current"><a href="contact.html">Contact</a></li>
+						</ul>
+					  </nav>
+					</div>
+					  <br>
+			</header>
+
+			<section id="showcase">
+				  
+				<div class="carousel">
+
+					<div class="slide fade">
+						<img src="images/jon-tyson-204115-crop.jpg" alt="neon" style="width:100%;" >
+					</div>
+					
+					<div class="slide fade">
+					  <img src="images/luann-hunt-790203-crop1.jpg" alt="oven1" style="width:100%;" >
+					</div>
+					
+					<div class="slide fade">
+					  <img src="images/pizza-on-firewood-furnace-crop.jpg" alt="pink" style="width:100%;">
+					</div>
+					  
+					<div class="slide fade">
+					  <img src="images/patrick-fore-361308-crop.jpg" alt="dough" style="width:100%;" >
+					</div>  
+					
+					<div class="slide fade">
+					  <img src="images/fatima-akram-1140510-crop.jpg" alt="pepperoni1" style="width:100%;">
+					</div>
+					<div class="slide fade">
+						<img src="images/fatima-akram-1140510-crop1.jpg" alt="pepperoni2" style="width:100%;" >
+					</div>
+					
+					<div class="slide fade">
+					  <img src="images/nassim-el-qochairi-1145488-crop1.jpg" alt="chalk" style="width:100%;">
+					</div>
+					
+					<div class="slide fade">
+					  <img src="images/pizza-1562028-crop.jpg" alt="tom" style="width:100%;">
+					</div>
+					
+					<div class="slide fade">
+					  <img src="images/nassim-el-qochairi-1145488-crop2.jpg" alt="chalk1" style="width:100%;" >
+					</div>
+					 
+				</div>
+			</section>
+			
+			<div class="container" style="text-align: center;">
+				<h2>How to contact the Pizza Impero Restaurant</h2>
+				<p>If you need to get in touch with us, please use the following details:</p>
+			</div>
+			
+			<section id="contentHolder">
+				  <div class="container">
+					<h1>Our Location</h1>
+					<div id = "googleMap"></div>
+					<div id="contactDetes">
+						<ul>
+							<li>
+								<h2>Contact details</h2>
+								<ul>
+									<li>Pizza Impero</li>
+									<li>41 Thomas Street</li>
+									<li>Limerick</li>
+									<li>Co.Limerick</li>
+									<li>Ireland</li>
+									<li>____________</li>
+									<li>Tel: 051 1234567</li>
+									<li>Email: pizzaimpero@email.com</li>
+								</ul>
+							</li>
+							<li>
+								<h2>Social media</h2>
+							<li>
+								<li><a href="#"><img src="images/fb.png" alt="" width="40" height="40" /></a>
+								<a href="#"><img src="images/tw.png" alt="" width="40" height="40" /></a>
+							</li></li>
+						</ul>
+						
+					</div>
+				  </div>
+			</section>
+			<br>
+			<section id="contentHolder">
+				  <div class="container">
+					<h1>Subscribe to our Newsletter</h1>
+					<div id="newsImg"><img src="images/emily-austin-1052589-web1.jpg" alt="newsImg" style="width:100%;"></div>
+					<form>
+						<div>
+							<input name="first_name" type="text" id="fname" placeholder=" First Name" />
+						</div>
+							
+						<div>
+							<input name="last_name" type="text" id="lastname" placeholder=" Last Name" />
+						</div>
+							
+						<div>
+							<input name="email" type="text" id="email" placeholder=" Email" />
+						</div>
+							
+						<div>
+							<input name="password" type="text" id="pass" placeholder=" Password" />
+						</div>
+							
+						<div>
+							<div class="small">Leave us a Message</div>
+								<textarea name="message" type="text" id="message" placeholder="Message"></textarea>	
+						</div>
+							
+							<input type="button" value="Submit" onclick = "emailValidator();">
+							<input type="reset" />
+					</form>
+				  </div>
+			</section>
+		
+			<footer>Shane Cunningham © 2019</footer>
+		 <script src="javascript/autoslider.js"></script>
+		 <script src="javascript/gMap.js"></script>
+		 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDockwubHElIYOeOHf-9DngumIb9m2ZwFM&callback=initMap"
+			type="text/javascript"></script>
+		 <script src="javascript/validateEmail.js"></script>
+	</body>
 
 </html>
